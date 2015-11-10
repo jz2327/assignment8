@@ -19,7 +19,7 @@ try:
 		num_trials = raw_input('Input how many times to ramdomly repeat the test: ')
 		try:	
 			investment_list = investment_options(positions, num_trials)
-			with open('result.txt', 'w') as f:   #save the results to result.txt
+			with open('results.txt', 'w') as f:   #save the results to result.txt
 				for i in range(len(investment_list.positions)):
 					daily_ret = investment_operating.num_trials_investment(investment_list.positions[i], investment_list.position_value[i], investment_list.num_trials)
 					investment_operating.plot_investment(investment_list.positions[i], investment_list.position_value[i], investment_list.num_trials)
