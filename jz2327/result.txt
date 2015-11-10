@@ -1,0 +1,13 @@
+
+Positions: 1 Position values: 1000 trial numbers: 10000
+the mean of the daily return is: 0.0348
+the stadard deviation of the daily return is: 0.999394296562
+Positions: 10 Position values: 100 trial numbers: 10000
+the mean of the daily return is: 0.02246
+the stadard deviation of the daily return is: 0.317470547295
+Positions: 100 Position values: 10 trial numbers: 10000
+the mean of the daily return is: 0.019942
+the stadard deviation of the daily return is: 0.0991993782037
+Positions: 1000 Position values: 1 trial numbers: 10000
+the mean of the daily return is: 0.0202776
+the stadard deviation of the daily return is: 0.0316416898765
