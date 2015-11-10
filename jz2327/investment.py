@@ -7,6 +7,7 @@ class investment_options():
 
 	def __init__(self, positions_input, num_trials):
 		positions = positions_input
+		positions_valid = [1, 10, 100, 1000]
 		if positions[0] != '[' or positions[-1] != ']':   #check the input string has the right format of being a list.
 			raise invalid_list_bound()
 		else:
@@ -15,6 +16,8 @@ class investment_options():
 			try:
 				for position in range(len(positions_list)):
 					positions_list[position] = int(positions_list[position])   #check if the elements in the list can be converted to integers.
+					if positions_list[position] not in positions_valid:
+						raise invalid_list_value()
 			except:
 				raise invalid_list_value()
 		self.positions = np.array(positions_list)
